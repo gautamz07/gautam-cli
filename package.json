@@ -1,0 +1,43 @@
+{
+  "name": "gautam-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "gautam": "./bin/hexo"
+  },
+  "files": [
+    "dist/**",
+    "completion",
+    "bin",
+    "assets"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc -b --clean",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "tool"
+  ],
+  "author": "gautam",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.8",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "abbrev": "^2.0.0",
+    "bluebird": "^3.7.2",
+    "hexo-fs": "^4.1.1",
+    "hexo-log": "^4.1.0",
+    "hexo-util": "^2.7.0",
+    "minimist": "^1.2.8",
+    "picocolors": "^1.0.0"
+  }
+}
